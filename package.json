@@ -1,6 +1,19 @@
 {
    "private": true,
    "name": "snack-pack",
-   "workspaces": ["site", "api"],
-   "scripts": {}
+   "version": "1.0.0",
+   "author": "Bob Menacho <bobmenacho@gmail.com>",
+   "repository": "https://github.com/ybbobdev/snack-pack.git",
+   "license": "MIT",
+   "workspaces": [
+      "packages/*"
+   ],
+   "scripts": {
+      "api": "yarn workspace api dev",
+      "site": "yarn workspace site dev",
+      "dev": "concurrently --kill-others-on-fail \"yarn site\"  \"yarn api\""
+   },
+   "dependencies": {
+      "concurrently": "^6.1.0"
+   }
 }
