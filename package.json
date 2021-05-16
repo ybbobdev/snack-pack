@@ -1,6 +1,6 @@
 {
    "private": true,
    "name": "snack-pack",
-   "workspaces": ["public-site"],
+   "workspaces": ["site", "api"],
    "scripts": {}
 }
