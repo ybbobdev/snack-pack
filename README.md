@@ -19,8 +19,8 @@ yarn dev
 ```
 
 Preview site
-SITE: [http://localhost:3030/](http://localhost:3030/)
-API: [http://localhost:3031/](http://localhost:3031/)
+ - SITE: [http://localhost:3030/](http://localhost:3030/)
+ - API: [http://localhost:3031/](http://localhost:3031/)
 
 Update [`appConfig.json`](./appConfig.json) for new environments
 
