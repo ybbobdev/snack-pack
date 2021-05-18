@@ -26,4 +26,8 @@ Update [`appConfig.json`](./appConfig.json) for new environments
 
 ## Reference
  - [Duplicating a repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/duplicating-a-repository)
+ - [Sequilize](https://sequelize.org/master/)
+ - [Next js](https://nextjs.org/docs/getting-started)
+ - [Tailwind](https://tailwindcss.com/docs)
  - [Tailwind color theme generator](https://tailwind.ink/)
+
