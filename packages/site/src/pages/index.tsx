@@ -1,12 +1,7 @@
 import Container from "../components/container";
-import MoreStories from "../components/more-stories";
-import HeroPost from "../components/hero-post";
-import Intro from "../components/intro";
 import Layout from "../components/layout";
-import { getAllPosts, getApiHealth } from "../lib/api";
+import { getApiHealth } from "../lib/api";
 import Head from "next/head";
-import { CMS_NAME } from "../lib/constants";
-import Post from "../types/post";
 
 type Props = {
   allPosts: Post[];
@@ -17,10 +12,12 @@ const Index = (resonseData: Props) => {
     <>
       <Layout>
         <Head>
-          <title>{CMS_NAME}</title>
+          <title>The Site</title>
         </Head>
         <Container>
-          <pre>{JSON.stringify(resonseData, null, 2)}</pre>
+          <h3 className="text-4xl lg:text-5xl font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
+            Snack Pack
+          </h3>
         </Container>
       </Layout>
     </>
