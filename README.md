@@ -7,9 +7,10 @@ Boiler plate collection of applications needed for a full stack web site.
  - Postgres (TBD)
  - GCP configs (TBD)
 
+# Develoment
 See "Duplicating a repository" to start a new project without forking
 
-Local development
+Local development setup
 ```
 nvm use
 yarn install
