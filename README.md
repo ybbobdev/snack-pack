@@ -1,8 +1,11 @@
-# snack-pack
+# Snack Pack
 Boiler plate collection of applications needed for a full stack web site.
+ - Typescript
+ - Tailwind
  - Nextjs
- - Sequilize (in development)
- - Postgres (in development)
+ - Sequilize (TBD)
+ - Postgres (TBD)
+ - GCP configs (TBD)
 
 
 Local development
