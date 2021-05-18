@@ -20,7 +20,7 @@ yarn dev
 
 Preview site
  - SITE: [http://localhost:3030/](http://localhost:3030/)
- - API: [http://localhost:3031/](http://localhost:3031/)
+ - API: [http://localhost:3031/](http://localhost:3031/__health)
 
 Update [`appConfig.json`](./appConfig.json) for new environments
 
