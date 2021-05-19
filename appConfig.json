@@ -1,8 +1,10 @@
 {
   "development": {
-    "api": "http://localhost:3031"
+    "api": "http://localhost:3031",
+    "db": "http://localhost:8080"
   },
   "production": {
-    "api": "http://localhost:3031"
+    "api": "http://localhost:3031",
+    "db": "http://localhost:8080"
   }
 }
