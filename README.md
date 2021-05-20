@@ -1,4 +1,6 @@
 # Snack Pack
+![snack pack](docs/images/snack-pack-4.png)
+
 Boiler plate collection of applications needed for a full stack web site.
  - Typescript
  - Sequilize
@@ -10,7 +12,7 @@ Boiler plate collection of applications needed for a full stack web site.
 
 ## Develoment
 
-1. Copy below and run `pbpaste > secrets` 
+1. Copy below and run `pbpaste > secrets`
 ```bash
 export POSTGRES_USERNAME=snack
 export POSTGRES_PASSWORD=pack
