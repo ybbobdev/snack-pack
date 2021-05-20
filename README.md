@@ -10,7 +10,7 @@ Boiler plate collection of applications needed for a full stack web site.
  - Postgres
  - GCP configs (TBD)
 
-## Develoment
+## Setup and Development
 
 1. Clone repo locally. See [Duplicating a repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/duplicating-a-repository) to start a new project without forking.
 ```
