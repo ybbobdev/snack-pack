@@ -27,22 +27,23 @@ cd snack-pack
 [ -f "secrets" ] && echo "secrets exists" || echo -e "export POSTGRES_USERNAME=snack\nexport POSTGRES_PASSWORD=pack\nexport PGADMIN_USERNAME=snack@pack.com\nexport PGADMIN_PASSWORD=pack" > secrets
 ```
 
-3. Run commands for local development
+3. Run these commands to start postgres and pgadmin.
 ```bash
-# start postgres and pgadmin
 source secrets && docker-compose up
+```
 
-# Install node dependencies and start site with api
+4. In a new shell run these commands to install node dependencies, start the api, and start the site in development mode.
+```
 nvm install $(cat .nvmrc) && nvm use
 yarn install
 yarn dev
 ```
 
-4. Preview site
+5. Verify site is up with these links. 
  - SITE: [http://localhost:3030/](http://localhost:3030/)
  - API: [http://localhost:3031/](http://localhost:3031/__health)
 
-5. Update [`appConfig.json`](./appConfig.json) and `secrets` as needed.
+6. Update [`appConfig.json`](./appConfig.json) and `secrets` as needed.
 
 ## Reference
  - See [`docs/docker-postgres-setup.md`](docs/docker-postgres-setup.md) for handy docker commands for viewing the `postgres` db and `pgadmin`.
