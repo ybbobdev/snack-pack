@@ -1,10 +1,14 @@
 {
   "development": {
     "api": "http://localhost:3031",
-    "db": "http://localhost:8080"
+    "dbHost": "localhost",
+    "dbName": "snackPackDb",
+    "dialect": "postgres"
   },
   "production": {
     "api": "http://localhost:3031",
-    "db": "http://localhost:8080"
+    "dbHost": "localhost",
+    "dbName": "snackPackDb",
+    "dialect": "postgres"
   }
 }
