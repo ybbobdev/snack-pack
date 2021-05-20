@@ -12,20 +12,19 @@ Boiler plate collection of applications needed for a full stack web site.
 
 ## Develoment
 
-1. Copy below and run `pbpaste > secrets`
-```bash
-export POSTGRES_USERNAME=snack
-export POSTGRES_PASSWORD=pack
-export PGADMIN_USERNAME=snack@pack.com
-export PGADMIN_PASSWORD=pack
+1. Clone repo locally. See [Duplicating a repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/duplicating-a-repository) to start a new project without forking.
 ```
-
-2. Run commands for local development
-```
-# clone repo locally
 git clone git@github.com:ybbobdev/snack-pack.git
 cd snack-pack
+```
 
+2. Copy this command and run it in the root of the project. This creates `secrets` with environment variables used for PostgresSQL and PGAdmin.
+```bash
+[ -f "secrets" ] && echo "secrets exists" || echo -e "export POSTGRES_USERNAME=snack\nexport POSTGRES_PASSWORD=pack\nexport PGADMIN_USERNAME=snack@pack.com\nexport PGADMIN_PASSWORD=pack" > secrets
+```
+
+3. Run commands for local development
+```
 # start postgres and pgadmin
 docker-compose up
 
@@ -35,17 +34,15 @@ yarn install
 yarn dev
 ```
 
-3. Preview site
+4. Preview site
  - SITE: [http://localhost:3030/](http://localhost:3030/)
  - API: [http://localhost:3031/](http://localhost:3031/__health)
 
-
-4. Update [`appConfig.json`](./appConfig.json) and `secrets` as needed. 
-
+5. Update [`appConfig.json`](./appConfig.json) and `secrets` as needed.
 
 ## Reference
  - See [`docs/docker-postgres-setup.md`](docs/docker-postgres-setup.md) for handy docker commands for viewing the `postgres` db and `pgadmin`.
- - See [Duplicating a repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/duplicating-a-repository) to start a new project without forking
+ -
  - [Sequilize](https://sequelize.org/master/)
  - [Yarn](https://yarnpkg.com/)
  - [Docker](https://www.docker.com/)
