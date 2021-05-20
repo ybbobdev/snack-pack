@@ -10,7 +10,7 @@ const Index = (props: { responseData: IApplicationResponse[] }) => {
     <>
       <Layout>
         <Head>
-          <title>The Site</title>
+          <title>Demo | Snack Pack</title>
         </Head>
         <Container>
           <h3 className="text-4xl lg:text-5xl font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
@@ -48,6 +48,5 @@ export default Index;
 
 export const getStaticProps = async () => {
   const responseData = await getApplications();
-  console.log("\nRESPONSE -------------", responseData);
   return { props: { responseData } };
 };
