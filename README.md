@@ -11,6 +11,14 @@ Boiler plate collection of applications needed for a full stack web site.
 ## Develoment
 See "Duplicating a repository" to start a new project without forking
 
+1. Create `secrets` file at the root of the repo with the following contents
+```bash
+export POSTGRES_USERNAME=snack
+export POSTGRES_PASSWORD=pack
+export PGADMIN_USERNAME=snack@pack.com
+export PGADMIN_PASSWORD=pac
+```
+
 Local development setup
 ```
 # start postgres and pgadmin
