@@ -17,7 +17,7 @@ Prerequisites to run this project
  - `docker`
 
 1. Clone repo locally. See [Duplicating a repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/duplicating-a-repository) to start a new project without forking.
-```
+```bash
 git clone git@github.com:ybbobdev/snack-pack.git
 cd snack-pack
 ```
@@ -28,7 +28,7 @@ cd snack-pack
 ```
 
 3. Run commands for local development
-```
+```bash
 # start postgres and pgadmin
 docker-compose up
 
