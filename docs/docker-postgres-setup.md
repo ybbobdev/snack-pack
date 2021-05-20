@@ -22,7 +22,7 @@ rm -rf pgadmin-data
 checkout the container and db
 ```
 docker exec -it dev-postgres bash
-psql -h localhost -U dev -d devDb
+psql -h localhost -U snack -d snackPackDb
 ```
 
 
