@@ -24,7 +24,7 @@ cd snack-pack
 
 2. Copy this command and run it in the root of the project. This creates `secrets` with environment variables used for PostgresSQL and PGAdmin.
 ```bash
-[ -f "secrets" ] && echo "secrets exists" || echo -e "export POSTGRES_USERNAME=snack\nexport POSTGRES_PASSWORD=pack\nexport PGADMIN_USERNAME=snack@pack.com\nexport PGADMIN_PASSWORD=pack" > secrets
+[ -f "secrets" ] && echo "secrets exists" || echo -e "export POSTGRES_USERNAME=snack\nexport POSTGRES_PASSWORD=pack\nexport PGADMIN_USERNAME=snack@pack.com\nexport PGADMIN_PASSWORD=pack" > secrets && source secrets
 ```
 
 3. Run commands for local development
