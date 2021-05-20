@@ -24,13 +24,13 @@ cd snack-pack
 
 2. Copy this command and run it in the root of the project. This creates `secrets` with environment variables used for PostgresSQL and PGAdmin.
 ```bash
-[ -f "secrets" ] && echo "secrets exists" || echo -e "export POSTGRES_USERNAME=snack\nexport POSTGRES_PASSWORD=pack\nexport PGADMIN_USERNAME=snack@pack.com\nexport PGADMIN_PASSWORD=pack" > secrets && source secrets
+[ -f "secrets" ] && echo "secrets exists" || echo -e "export POSTGRES_USERNAME=snack\nexport POSTGRES_PASSWORD=pack\nexport PGADMIN_USERNAME=snack@pack.com\nexport PGADMIN_PASSWORD=pack" > secrets
 ```
 
 3. Run commands for local development
 ```bash
 # start postgres and pgadmin
-docker-compose up
+source secrets && docker-compose up
 
 # Install node dependencies and start site with api
 nvm install $(cat .nvmrc) && nvm use
