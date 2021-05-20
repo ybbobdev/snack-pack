@@ -1,8 +1,7 @@
 # Snack Pack
 ![snack pack](docs/images/snack-pack-4.png)
 
-Boiler plate collection of applications needed for a full stack web site.
- - Typescript
+Boiler plate collection of applications needed for a full stack web site.  - Typescript
  - Sequilize
  - Tailwind
  - Express
@@ -33,7 +32,7 @@ cd snack-pack
 # start postgres and pgadmin
 docker-compose up
 
-# start site and api
+# Install node dependencies and start site with api
 nvm install $(cat .nvmrc) && nvm use
 yarn install
 yarn dev
