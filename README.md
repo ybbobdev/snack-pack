@@ -39,7 +39,9 @@ yarn dev
  - SITE: [http://localhost:3030/](http://localhost:3030/)
  - API: [http://localhost:3031/](http://localhost:3031/__health)
 
-Update [`appConfig.json`](./appConfig.json) for new environments
+
+4. Update [`appConfig.json`](./appConfig.json) and `secrets` as needed. 
+
 
 ## Reference
  - See [`docs/docker-postgres-setup.md`](docs/docker-postgres-setup.md) for handy docker commands for viewing the `postgres` db and `pgadmin`.
