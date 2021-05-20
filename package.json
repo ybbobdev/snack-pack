@@ -9,8 +9,9 @@
       "packages/*"
    ],
    "scripts": {
-      "api": "yarn workspace api dev",
-      "site": "yarn workspace site dev",
+      "source_secrets": "source secrets",
+      "api": "yarn source_secrets && yarn workspace api dev",
+      "site": "yarn source_secrets && yarn workspace site dev",
       "dev": "concurrently --kill-others-on-fail \"yarn site\"  \"yarn api\""
    },
    "dependencies": {
