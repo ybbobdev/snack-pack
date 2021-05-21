@@ -20,6 +20,12 @@ git clone git@github.com:ybbobdev/snack-pack.git
 cd snack-pack
 ```
 
+2. Install node dependencies
+```bash
+nvm install $(cat .nvmrc) 
+yarn install
+```
+
 2. Copy this command and run it in the root of the project. This creates `./secrets` file with environment variables used for PostgresSQL and PGAdmin. It is in the `.gitignore` list.
 ```bash
 yarn secrets
@@ -30,10 +36,9 @@ yarn secrets
 yarn docker
 ```
 
-4. In a new shell run these commands to install node dependencies, start the api, and start the site in development mode.
+4. In a new shell run these commands to start the api and the site in development mode.
 ```
-nvm install $(cat .nvmrc) && nvm use
-yarn install
+nvm use
 yarn dev
 ```
 
