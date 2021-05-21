@@ -1,11 +1,14 @@
 import { Sequelize } from "sequelize";
 import appConfig from "../../../appConfig.json";
 
-import { EEnvironments, EDbCredentials } from "../../shared/enums/EEnvironments";
+import {
+  EEnvironments,
+  EDbCredentials,
+} from "../../shared/enums/EEnvironments";
 import { IAppConfigItem } from "../../shared/interfaces/IAppConfig";
 import { IApplicationResponse } from "../../shared/interfaces/IApplicationDataSchema";
 
-const connectToDb = async ()  => {
+const connectToDb = async () => {
   const NODE_ENV: EEnvironments = (process.env.NODE_ENV ||
     EEnvironments.DEV) as EEnvironments;
   const config: IAppConfigItem = appConfig[NODE_ENV];
@@ -39,7 +42,9 @@ const connectToDb = async ()  => {
   }
 };
 
-export const getApplications = async (): Promise<IApplicationResponse[] | undefined> => {
+export const getApplications = async (): Promise<
+  IApplicationResponse[] | undefined
+> => {
   const applicationData = await connectToDb();
   return applicationData as IApplicationResponse[];
 };
