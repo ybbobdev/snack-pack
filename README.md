@@ -27,7 +27,7 @@ cd snack-pack
 
 3. Run these commands to start postgres and pgadmin.
 ```bash
-source secrets && docker-compose up
+yarn docker
 ```
 
 4. In a new shell run these commands to install node dependencies, start the api, and start the site in development mode.
