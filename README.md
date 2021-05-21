@@ -3,6 +3,13 @@
 
 Pre configured collection of applications needed for a full stack web site.  
 
+## TLDR;
+```
+nvm install $(cat .nvmrc) 
+yarn all
+```
+preview [http://localhost:3030/](http://localhost:3030/)
+
 ## Setup and Development
 
 You'll need `nvm`,`yarn` and `docker` installed to run this project  

@@ -13,7 +13,8 @@
       "docker": "source secrets && docker-compose up",
       "api": "source secrets && yarn workspace api dev",
       "site": "source secrets && yarn workspace site dev",
-      "dev": "source secrets && concurrently --kill-others-on-fail \"yarn site\"  \"yarn api\""
+      "dev": "source secrets && concurrently --kill-others-on-fail \"yarn site\"  \"yarn api\"",
+      "all": "yarn install && yarn secrets && concurrently --kill-others-on-fail  \"source secrets && yarn docker\" \"source secrets && yarn dev\""
    },
    "dependencies": {
       "concurrently": "^6.1.0"
