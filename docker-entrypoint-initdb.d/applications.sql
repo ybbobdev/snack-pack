@@ -34,3 +34,23 @@ INSERT INTO applications (
     'The World''s Most Advanced Open Source Relational Database',
     'https://www.postgresql.org/docs/'
 );
+
+INSERT INTO applications (
+    app_name,
+    app_description,
+    app_doc_url
+) VALUES (
+    'Docker',
+    'The preferred choice for millions of developers that are building containerized apps.',
+    'https://docs.docker.com/'
+);
+
+INSERT INTO applications (
+    app_name,
+    app_description,
+    app_doc_url
+) VALUES (
+    'Tailwindcss',
+    'Rapidly build modern websites without ever leaving your HTML.',
+    'https://tailwindcss.com/docs'
+);
