@@ -20,9 +20,9 @@ git clone git@github.com:ybbobdev/snack-pack.git
 cd snack-pack
 ```
 
-2. Copy this command and run it in the root of the project. This creates `secrets` with environment variables used for PostgresSQL and PGAdmin.
+2. Copy this command and run it in the root of the project. This creates `./secrets` file with environment variables used for PostgresSQL and PGAdmin. It is in the `.gitignore` list.
 ```bash
-[ -f "secrets" ] && echo "secrets exists" || echo -e "export POSTGRES_USERNAME=snack\nexport POSTGRES_PASSWORD=pack\nexport PGADMIN_USERNAME=snack@pack.com\nexport PGADMIN_PASSWORD=pack" > secrets
+yarn secrets
 ```
 
 3. Run these commands to start postgres and pgadmin.
