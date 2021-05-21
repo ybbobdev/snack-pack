@@ -1,7 +1,8 @@
 # Snack Pack
 ![snack pack](docs/images/snack-pack-4.png)
 
-Boiler plate collection of applications needed for a full stack web site.  - Typescript
+Boiler plate collection of applications needed for a full stack web site.  
+ - Typescript
  - Sequilize
  - Tailwind
  - Express

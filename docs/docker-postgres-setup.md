@@ -21,12 +21,12 @@ rm -rf pgadmin-data
 
 checkout the container and db
 ```
-docker exec -it dev-postgres bash
+docker exec -it snack-pack_postgres_1 bash
 psql -h localhost -U snack -d snackPackDb
 ```
 
 
 get IP for postgres instance
 ```
-docker inspect dev-postgres -f "{{json .NetworkSettings.Networks }}"
+docker inspect snack-pack_postgres_1 -f "{{json .NetworkSettings.Networks }}"
 ```
