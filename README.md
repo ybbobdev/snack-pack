@@ -11,10 +11,7 @@ Boiler plate collection of applications needed for a full stack web site.  - Typ
 
 ## Setup and Development
 
-Prerequisites to run this project
- - `nvm` 
- - `yarn`
- - `docker`
+You'll need `nvm`,`yarn` and `docker` installed to run this project  
 
 1. Clone repo locally. See [Duplicating a repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/duplicating-a-repository) to start a new project without forking.
 ```bash
