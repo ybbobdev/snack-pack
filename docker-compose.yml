@@ -11,8 +11,8 @@ services:
     - ${PWD}/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
     environment:
       POSTGRES_DB: snackPackDb
-      POSTGRES_USER: snack
-      POSTGRES_PASSWORD: pack
+      POSTGRES_USER: ${POSTGRES_USERNAME}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
   pgadmin:
     image: dpage/pgadmin4
     restart: always
@@ -23,5 +23,5 @@ services:
     links:
       - postgres:pgsql-server
     environment:
-      PGADMIN_DEFAULT_EMAIL: snack@pack.com
-      PGADMIN_DEFAULT_PASSWORD: pack
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_USERNAME}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_USERNAME}

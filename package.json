@@ -9,7 +9,7 @@
       "packages/*"
    ],
    "scripts": {
-      "secrets": "[ -f \"secrets\" ] && echo \"secrets exists\" || echo -e \"export POSTGRES_USERNAME=snack\nexport POSTGRES_PASSWORD=pack\nexport PGADMIN_USERNAME=snack@pack.com\nexport PGADMIN_PASSWORD=pack\" > secrets",
+      "secrets": "[ -f \"secrets\" ] && echo \"secrets exists\" || echo \"export POSTGRES_USERNAME=snack\nexport POSTGRES_PASSWORD=pack\nexport PGADMIN_USERNAME=snack@pack.com\nexport PGADMIN_PASSWORD=pack\" > secrets",
       "docker": "source secrets && docker-compose up",
       "api": "source secrets && yarn workspace api dev",
       "site": "source secrets && yarn workspace site dev",
