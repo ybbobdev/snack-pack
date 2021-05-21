@@ -15,14 +15,23 @@ const Index = (props: { responseData: IApplicationResponse[] }) => {
         <Container>
           {responseData.length ? (
             <>
-              <div className="section py-20">
-                <h3 className="text-4xl lg:text-5xl font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
-                  Snack Pack
-                </h3>
-                <p className="pt-10 lg:text-left text-center">
-                  Table below lists the apps and frameworks that are used to
-                  make this application. Data in the table is all sourced from the database. Checkout out the <a className="text-blue-400 no-underline hover:underline" href="https://github.com/ybbobdev/snack-pack#snack-pack">README.md</a>
-                </p>
+              <div className="flex flex-col">
+                <div className="section py-20">
+                  <h3 className="text-4xl lg:text-5xl font-bold tracking-tighter leading-tight text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
+                    Snack Pack
+                  </h3>
+                  <p className="pt-10 lg:text-left text-2xl">
+                    Table below lists the apps and frameworks that are used to
+                    make this application. Data in the table is all sourced from
+                    the database. Checkout out the{" "}
+                    <a
+                      className="text-blue-400 no-underline hover:underline"
+                      href="https://github.com/ybbobdev/snack-pack#snack-pack"
+                    >
+                      README.md
+                    </a>
+                  </p>
+                </div>
               </div>
               <div className="flex flex-col">
                 <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
