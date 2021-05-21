@@ -1,7 +1,7 @@
 # Snack Pack
 ![snack pack](docs/images/snack-pack-4.png)
 
-Boiler plate collection of applications needed for a full stack web site.  
+Pre configured collection of applications needed for a full stack web site.  
 
 ## Setup and Development
 
