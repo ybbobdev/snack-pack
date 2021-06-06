@@ -3,6 +3,7 @@ services:
 
   postgres:
     image: postgres:latest
+    container_name: sp-db
     restart: always
     ports:
     - 5432:5432
@@ -15,6 +16,7 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
   pgadmin:
     image: dpage/pgadmin4
+    container_name: sp-pg
     restart: always
     ports:
     - 8080:80
