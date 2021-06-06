@@ -14,7 +14,7 @@
       "api": "source secrets && yarn workspace api dev",
       "site": "source secrets && yarn workspace site dev",
       "dev": "source secrets && concurrently --kill-others-on-fail \"yarn site\"  \"yarn api\"",
-      "all": "yarn install && yarn secrets && concurrently --kill-others-on-fail  \"source secrets && yarn docker\" \"source secrets && yarn dev\"",
+      "all": "yarn && yarn secrets && concurrently --kill-others-on-fail  \"source secrets && yarn docker\" \"source secrets && yarn dev\"",
       "docker:clean": "[ \"$(docker ps -a | grep sp-db)\" ] && docker rm sp-db -f && [ \"$(docker ps -a | grep sp-pg)\" ] && docker rm sp-pg -f",
       "docker:clean:data": "rm -rf postgres-data && rm -rf pgadmin-data",
       "clean": "find . -name node_modules -type d -print0|xargs -0 rm -r --",
