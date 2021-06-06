@@ -26,4 +26,4 @@ services:
       - postgres:pgsql-server
     environment:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_USERNAME}
-      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_USERNAME}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD}
