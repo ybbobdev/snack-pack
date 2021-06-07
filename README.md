@@ -26,7 +26,7 @@ nvm install $(cat .nvmrc)
 yarn install
 ```
 
-3. Copy this command and run it in the root of the project. This creates `./secrets` file with environment variables used for PostgresSQL and PGAdmin. It is in the `.gitignore` list.
+3. Run this in the root of the project. This creates `./secrets` file with environment variables used for PostgresSQL and PGAdmin. It is in the `.gitignore` list. See [`package.json`](https://github.com/ybbobdev/snack-pack/blob/main/package.json#L12)
 ```bash
 yarn secrets
 ```
